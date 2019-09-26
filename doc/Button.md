@@ -7,3 +7,10 @@ API
 | type | 按钮类型，可选值为 primary/warning | string | |
 | shape | 设置按钮形状 可选值为 round 或者不设 | string | |
 | disabled | 设置禁用 | boolean | false |
+---
+#### demo
+<p align="center">
+  <a>
+    <img width="300" src="../public/images/button.jpg">
+  </a>
+</p>

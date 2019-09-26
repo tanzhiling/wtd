@@ -27,14 +27,28 @@ const App = () => {
   }
   return (
     <div className="app">
-      <Button onClick={onInfo} style={{ marginBottom: ".2rem" }}>信息</Button>
-      <Button type="primary" onClick={onSuccess} style={{ marginBottom: ".2rem" }}>成功</Button>
-      <Button type="warning" onClick={onFail} style={{ marginBottom: ".2rem" }}>失败</Button>
-      <Button onClick={onLoad} shape="round" style={{ marginBottom: ".2rem" }}>加载中</Button>
-      <Button type="primary" size="small" shape="round" onClick={onFail} style={{ marginBottom: ".2rem", width: "1rem" }}>失败</Button>
-      <Button type="primary" shape="round" disabled style={{ marginBottom: ".2rem" }}>成功</Button>
-      <Icon type="loading" />
       <List
+        renderHeader="Button 按钮"
+      >
+        <Button onClick={onInfo} style={{ marginBottom: ".2rem" }}>default</Button>
+        <Button type="primary" onClick={onSuccess} style={{ marginBottom: ".2rem" }}>primary</Button>
+        <Button type="warning" onClick={onFail} style={{ marginBottom: ".2rem" }}>warning</Button>
+        <Button onClick={onLoad} shape="round" style={{ marginBottom: ".2rem" }}>shape</Button>
+        <Button type="primary" size="small" shape="round" onClick={onFail} style={{ marginBottom: ".2rem", width: "1rem" }}>samll</Button>
+        <Button type="primary" shape="round" disabled style={{ marginBottom: ".2rem" }}>disabled</Button>
+      </List>
+      {/* <List
+        renderHeader="Icon"
+      >
+        <Icon type="left" style={{ margin: 20 }} />
+        <Icon type="right" style={{ margin: 20 }} />
+        <Icon type="up" style={{ margin: 20 }} />
+        <Icon type="down" style={{ margin: 20 }} />
+        <Icon type="add" style={{ margin: 20 }} />
+        <Icon type="del" style={{ margin: 20 }} />
+        <Icon type="loading" style={{ margin:20}} />
+      </List> */}
+      {/* <List
         renderHeader="描述信息"
       >
         <List.Item>标题文字</List.Item>
@@ -51,7 +65,7 @@ const App = () => {
         >标题文字
         <List.Item.Brief>描述信息</List.Item.Brief>
         </List.Item>
-      </List>
+      </List>  */}
     </div>
   )
 }
