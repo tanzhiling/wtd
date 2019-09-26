@@ -1,7 +1,8 @@
-import React from 'react';
-import { Toast, Button, Icon, List } from "./components";
+import React, { useState } from 'react';
+import { Toast, Button, Icon, List, Modal } from "./components";
 import "./App.less"
 const App = () => {
+  const [visible, setVisible] = useState(false)
   const onSuccess = () => {
     Toast.success({
       content: "加入购物车成功！",
@@ -27,7 +28,7 @@ const App = () => {
   }
   return (
     <div className="app">
-      <List
+      {/* <List
         renderHeader="Button 按钮"
       >
         <Button onClick={onInfo} style={{ marginBottom: ".2rem" }}>default</Button>
@@ -36,7 +37,15 @@ const App = () => {
         <Button onClick={onLoad} shape="round" style={{ marginBottom: ".2rem" }}>shape</Button>
         <Button type="primary" size="small" shape="round" onClick={onFail} style={{ marginBottom: ".2rem", width: "1rem" }}>samll</Button>
         <Button type="primary" shape="round" disabled style={{ marginBottom: ".2rem" }}>disabled</Button>
-      </List>
+      </List> */}
+      <Button type="primary" onClick={() => setVisible(true)} style={{ marginBottom: ".2rem" }}>弹出</Button>
+      <Modal
+        visible={visible}
+        title='标题'
+        onClose={() => setVisible(false)}
+      >
+        <Button type="primary" style={{ marginBottom: ".2rem" }}>primary</Button>
+      </Modal>
       {/* <List
         renderHeader="Icon"
       >
