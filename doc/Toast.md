@@ -1,6 +1,6 @@
 #### Toast 组件 (目前 success fail info loading 模式)
-
 API
+---
 | 参数 | 说明 | 类型 | 默认值 |
 | ------------ | ---------------------- | ----------------------- | ------ |
 | content | 提示内容 | React.Element or String | 无 |
