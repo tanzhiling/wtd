@@ -5,7 +5,6 @@
 </p>
 <h1 align="center">WT Design</h1>
 
-##
 #### Icon 组件 基于 svg 可引入 iconfont.cn 自行扩展
 
 |   参数    |   说明    |  类型  | 默认值 |
